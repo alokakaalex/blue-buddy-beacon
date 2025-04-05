@@ -2,7 +2,7 @@
 import React from 'react';
 import { useBluetooth } from "@/context/BluetoothContext";
 import { Button } from "@/components/ui/button";
-import { Radar, Broadcast, X } from "lucide-react";
+import { Radar, Radio, X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ControlPanel: React.FC = () => {
@@ -78,7 +78,7 @@ const ControlPanel: React.FC = () => {
             </>
           ) : (
             <>
-              <Broadcast className="mr-2 h-4 w-4" />
+              <Radio className="mr-2 h-4 w-4" />
               Broadcast Yourself
             </>
           )}
